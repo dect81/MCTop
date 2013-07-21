@@ -1,0 +1,1 @@
+<?phpif($debug) {	$file = __FILE__;	debug::include_report($file);}class timer {  var $start_time;  function timer () {    $this->start_time = array_sum(explode(' ', microtime()));  }  function get_time () {    $current_time = array_sum(explode(' ', microtime()));    return round($current_time - $this->start_time, 5);  }}?>

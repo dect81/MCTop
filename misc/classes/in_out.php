@@ -1,0 +1,1 @@
+<?phpif($debug) {	$file = __FILE__;	debug::include_report($file);}class in_out extends base {	  function record($username, $in_out) {    global $CONF, $DB, $TMPL;    if ($in_out != 'in' && $in_out != 'out') {      return 0;    }    return 1;  }}?>
